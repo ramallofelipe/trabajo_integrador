@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/bg-2.png);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: "Roboto";
+    margin:0;
+}
+main{
+    width: 1140px; 
+}
+.menu{
+    background-color: rgba(144, 144, 144, 0.5);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.logo{
+    width: 25px;
+    color: grey;
+    margin-left: 40px;
+}
+.menu1{
+    justify-self: flex-start;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 69.57%;
+}
+.menu1 .amenu{
+    margin-left: 50px;
+}
+.menu2{
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 30%;
+}
+.input{
+    background-color: rgba(144, 144, 144, 0);
+    border: 2px solid rgb(94, 94, 94);
+    border-radius: 30px;
+    height: 30px;
+    margin-right: 20px;
+    text-indent: 8px;
+}
+.amenu{
+    margin-left: 15px;
+    margin-right: 10px;
+}
+.tmenu{
+    color: rgb(94, 94, 94);
+    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: 500;
+}
