@@ -4,20 +4,21 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(../img/bg-2.png);
+    background-color: black;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    font-family: "Roboto";
+    font-family: "DM sans";
     margin:0;
 }
 main{
     width: 1140px; 
 }
 .menu{
-    background-color: rgba(144, 144, 144, 0.5);
+    background-color: ;
     border-radius: 30px;
+    border: 0px solid lightgray;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -29,7 +30,7 @@ main{
     margin-bottom: 20px;
 }
 .logo{
-    width: 25px;
+    width: 35px;
     color: grey;
     margin-left: 40px;
 }
@@ -56,19 +57,149 @@ main{
 }
 .input{
     background-color: rgba(144, 144, 144, 0);
-    border: 2px solid rgb(94, 94, 94);
+    border: 2px solid rgb(195, 195, 195);
     border-radius: 30px;
-    height: 30px;
+    height: 40px;
+    width: 200px;
     margin-right: 20px;
-    text-indent: 8px;
+    text-indent: 15px;
+    color: lightgrey;
 }
 .amenu{
     margin-left: 15px;
     margin-right: 10px;
 }
 .tmenu{
-    color: rgb(94, 94, 94);
+    color: rgb(195, 195, 195);
     text-decoration: none;
-    font-family: "Roboto";
+    font-family: "DM sans";
     font-weight: 500;
+}
+.cuerpo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+h1{
+    color: lightgrey;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.productos{
+    width: 1200px;
+    height: 1000px;
+    background-color: rgba(144, 144, 144, 0);
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.productos article{
+    height: 530px;
+    width: 18%;
+    border: 0.5px solid lightgrey;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.productos li{
+    color: lightgrey;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 11px;
+}
+ul{
+    width: 190px;
+    margin-left: 15px;
+}
+.productos h3{
+    color: lightgrey;
+    margin-top: 15px;
+    font-family: "DM sans";
+}
+div{
+    width: 200px;
+    color: lightgrey;
+    margin-bottom: 10px;
+}
+div p{
+    font-size: 20px;
+}
+.img{
+    width:190px;
+    border-radius: 30px;
+}
+.ver{
+    text-decoration: none;
+    color: #c4c4c4;
+    border: 0.5px solid lightgrey;
+    padding: 10px;
+    border-radius: 30px;
+    align-self: flex-end;
+    width: 150px;
+    margin-bottom: 15px;
+}
+.primero{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 1180px;
+    height: ;
+    background-color: ;
+    margin-top: 130px;
+    border-radius: 30px;
+}
+.air{
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    height: 480px;
+}
+.primero h2{
+    color: lightgrey;
+}
+.ah2{
+    align-self: center;
+    height: 208px;
+}
+.h2a{
+    font-size: 56px;
+}
+.h2b{
+    font-weight: 2000;
+    font-family: "bungee";
+    font-size: 100px;
+    height: 100px;
+}
+.air p{
+    color: white;
+    width: 400px;
+    font-size: 12px;
+    align-self: center;
+
+}
+.comprar{
+    text-decoration: none;
+    background-color: black;
+    color: lightgrey;
+    border: 0.5px solid lightgrey;
+    padding: 10px;
+    border-radius: 30px;
+    width: 150px;
+    margin-bottom: 15px;
+    height:50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: flex-end;
 }
