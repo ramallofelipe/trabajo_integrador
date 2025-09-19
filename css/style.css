@@ -72,3 +72,65 @@ main{
     font-family: "Roboto";
     font-weight: 500;
 }
+
+
+
+
+
+
+
+/* PRODUCT */
+
+.cuerpo{
+    width: 1180px;
+    display: flex;
+
+}
+
+.iphone17img{
+    width: 100% ;
+}
+.imgIphone{
+      width: 60% ;
+}
+.partederecha{
+    width: 500px;
+     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    
+    margin-bottom: 10px;
+
+}
+.titulo{
+align-self:center;
+width: 100%;
+}
+.tituloIphone{
+color: white;
+width: 200%;
+font-size: 60px;
+}
+.precioIphone{
+color: white;
+font-size: 50px;
+width: 200px;
+}
+.pagoIphone{
+color: gray;
+width: 250px;
+}
+
+.a17{
+    color: white;
+}
+.descuadradito{
+    color: white;
+}
+.faceID{
+    width: 100px;
+}
+.battery{
+    width: 100px;
+}
