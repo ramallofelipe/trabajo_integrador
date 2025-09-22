@@ -61,7 +61,7 @@ main{
     border-radius: 30px;
     height: 40px;
     width: 200px;
-    margin-right: 20px;
+    margin-left: 20px;
     text-indent: 15px;
     color: lightgrey;
 }
@@ -89,7 +89,7 @@ h1{
 }
 .productos{
     width: 1200px;
-    height: 1000px;
+    height: 1200px;
     background-color: rgba(144, 144, 144, 0);
     border-radius: 30px;
     display: flex;
@@ -100,7 +100,7 @@ h1{
 .productos article{
     height: 530px;
     width: 18%;
-    border: 0.5px solid lightgrey;
+    border: 0.5px solid ;
     border-radius: 30px;
     margin: 10px;
     padding: 5px;
@@ -138,7 +138,8 @@ div p{
 }
 .ver{
     text-decoration: none;
-    color: #c4c4c4;
+    color: black;
+    background-color: lightgrey;
     border: 0.5px solid lightgrey;
     padding: 10px;
     border-radius: 30px;
@@ -153,11 +154,21 @@ div p{
     width: 1180px;
     height: ;
     background-color: ;
-    margin-top: 130px;
+    margin-top: 0px;
+    border-radius: 30px;
+}
+.num{
+    color: black;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 30px;
 }
 .air{
-    width: 700px;
+    width: 660px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -165,25 +176,25 @@ div p{
     padding: 10px;
     height: 480px;
 }
-.primero h2{
-    color: lightgrey;
-}
+
 .ah2{
     align-self: center;
     height: 208px;
 }
 .h2a{
     font-size: 56px;
+    color: lightgrey;
 }
 .h2b{
     font-weight: 2000;
     font-family: "bungee";
     font-size: 100px;
     height: 100px;
+    color: lightgrey;
 }
-.air p{
+.parrafo_airpods{
     color: white;
-    width: 400px;
+    width: 380px;
     font-size: 12px;
     align-self: center;
 
@@ -202,4 +213,52 @@ div p{
     justify-content: center;
     align-items: center;
     justify-self: flex-end;
+}
+.biens{
+    width: 1180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.bien{
+    color: white;
+    font-size: 25px;
+    
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.foot{
+    height: 70px;
+    width: 1180px;
+    border: 0.5px solid lightgrey;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.menu3{
+    color: lightgrey;
+    text-decoration: none;
+    
+}
+span{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: lightgrey;
+}
+.mil{
+   visibility: hidden;
+   color: white;
+}
+select{
+    background-color: black;
+    border: black;
+    color: white;
 }
