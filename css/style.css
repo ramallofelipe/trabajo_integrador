@@ -1,77 +1,4 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-body{
-    background-color: black;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-family: "Roboto";
-    margin:0;
-}
-main{
-    width: 1140px; 
-}
-.menu{
-    background-color: rgba(144, 144, 144, 0.5);
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    height: 50px;
-    width: 100%;
-    margin-bottom: 20px;
-}
-.logo{
-    width: 25px;
-    color: grey;
-    margin-left: 40px;
-}
-.menu1{
-    justify-self: flex-start;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    width: 69.57%;
-}
-.menu1 .amenu{
-    margin-left: 50px;
-}
-.menu2{
-    justify-self: flex-end;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    width: 30%;
-}
-.input{
-    background-color: rgba(144, 144, 144, 0);
-    border: 2px solid rgb(94, 94, 94);
-    border-radius: 30px;
-    height: 30px;
-    margin-right: 20px;
-    text-indent: 8px;
-}
-.amenu{
-    margin-left: 15px;
-    margin-right: 10px;
-}
-.tmenu{
-    color: rgb(94, 94, 94);
-    text-decoration: none;
-    font-family: "Roboto";
-    font-weight: 500;
-}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -342,7 +269,6 @@ select{
 
 
 
-
 /* PRODUCT */
 
 .cuerpo{
@@ -398,3 +324,237 @@ width: 250px;
 .battery{
     width: 100px;
 }
+
+
+/* media */
+
+@media (max-width: 1200px){
+    main, .foot{
+        width: 90vw;
+        max-width: 850px;
+        min-width: 650px;
+    }
+    .amenu{
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .menu1{
+        width: 75%;
+    }
+    .menu2{
+        width: 25%;
+    }
+    .cuerpo{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        max-width: 850px;
+        min-width: 650px;
+    }
+    .productos{
+        height: 2500px;
+        width: 90vw;
+        max-width: 850px;
+        min-width: 650px;
+    }
+    .h1{
+        height: 40px;
+    }
+    .productos article{
+        width: 30%;
+    }
+    .input{
+        width: 8.33vw;
+        max-width: 100px;
+        min-width: 80px;
+    }
+    .primero{
+        width: 90vw;
+        max-width: 850px;
+        min-width: 650px;
+        flex-direction: ;
+    }
+    h3{
+        height: 20px;
+    }
+    .auris{
+        width: 450px;
+    }
+    .air{
+        width: 27vw;
+        max-width: 400px;
+    }
+    .parrafo_airpods{
+        display: none;
+    }
+    .ah2{
+        height: 160px;
+    }
+    .h2a{
+        font-size: 40px;
+        align-self: center;
+    }
+    .h2b{
+        font-size: 70px;
+    }
+    .mil{
+        color: white;
+        visibility: visible;
+    }
+}
+@media (max-width: 650px){main{
+        width: 550px;
+        min-width: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .h1{
+        width: 300px;
+    }
+    .cuerpo{
+        width: 90vw;
+        min-width: 0;
+    }
+    .productos{
+        justify-content: center;
+        height: 7000px;
+        width: 90vw;
+        min-width: 0;
+    }
+   .productos article{
+        width: 90vw;
+        height: 700px;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        margin: 0;
+    }
+    .productos h3{
+        font-size: 21px;
+    }
+    .productos li{
+        font-size: 12px;
+        
+    }
+    h1{
+        justify-self: center;
+    }
+    .ver{
+        align-self: center;
+        padding: 20px;
+        font-size: 20px;
+        width: 200px;
+    }
+    .img{
+        width: 260px;
+        height: 278px;
+        align-self: ;
+    }
+    .vendido{
+        flex-direction: column;
+        width: 420px;
+        height: 1000px;
+        align-self: center;
+    }
+    .auris{
+        width: 300px;
+        height: 300px;
+    }
+    header{
+        width:90vw;
+    }
+    .menu{
+        flex-direction: column;
+        height: 330px;
+        width: 100%;
+    }
+    .menu1{
+        height: 250px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .menu2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80px;
+    }
+    .menu1 .amenu{
+        margin: 0px;
+        height: 35px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0.5px solid lightgrey;
+        border-radius: 30px;
+    }
+    .menu2 .amenu{
+        margin: 0px;
+        height: 35px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0.5px solid lightgrey;
+        border-radius: 30px;
+        color: black;
+        background-color: lightgrey;
+    }
+    .menu2 .tmenu{
+        color: black;
+    }
+    .tmenu{
+        margin: 0;
+    }
+    .logo, #search.input{
+        margin: 0;
+    }
+    #search.input{
+        width: 100%;
+        max-width: none;
+    }
+    footer{
+        width: 90vw;
+    }
+    .foot{
+        width: 90vw;
+        display: none;
+    }
+    .vendido{
+        height: 700px;
+        width: 90vw;
+    }
+    .primero{
+        height: 650px;
+        width: 90vw;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .air{
+        width: 90vw;
+        height: 320px;
+        display: flex;
+        align-items: center;
+    }
+    .mil{
+        width: 100%;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    h1{
+        font-size: 38px;
+
+    }
+}
+    
