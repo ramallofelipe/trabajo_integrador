@@ -1,4 +1,3 @@
-
 *{
     margin: 0px;
     padding: 0px;
@@ -101,6 +100,7 @@ h1{
 .productos article{
     height: 530px;
     width: 18%;
+    border: 0.5px solid ;
     border:;
     border-radius: 30px;
     margin: 10px;
@@ -223,7 +223,7 @@ div p{
 .bien{
     color: white;
     font-size: 25px;
-    
+
 }
 footer{
     display: flex;
@@ -245,7 +245,7 @@ footer{
 .menu3{
     color: lightgrey;
     text-decoration: none;
-    
+
 }
 span{
     margin-left: 10px;
@@ -273,14 +273,17 @@ select{
     width: 1180px;
     margin-top: 60px;
     display: flex;
+color: lightgrey;
     color: lightgrey;
     font-family: "DM sans";
 }
 
 .iphone17img{
+    width: 500px ;
     width: 450px ;
 }
 .imgIphone{
+      width: 40% ;
     width: 40% ;
     display: flex;
     align-items: center;
@@ -292,7 +295,7 @@ select{
     flex-direction: row;
     flex-wrap: wrap;
     padding: 10px;
-    
+
     margin-bottom: 10px;
 
 }
@@ -302,6 +305,7 @@ width: 100%;
 }
 .tituloIphone{
 color: lightgrey;
+width: 200%;
 width: 600px;
 font-size: 60px;
 margin: 0;
@@ -502,7 +506,7 @@ width: 250px;
     }
     .productos li{
         font-size: 12px;
-        
+
     }
     h1{
         justify-self: center;
@@ -621,4 +625,3 @@ width: 250px;
 
     }
 }
-    
