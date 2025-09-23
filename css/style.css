@@ -442,9 +442,7 @@ width: 250px;
     .primero{
         width: 90vw;
         max-width: 850px;
-        min-width: 650px;
-        flex-direction: ;
-    }
+        min-width: 650px;    }
     h3{
         height: 20px;
     }
@@ -520,7 +518,6 @@ width: 250px;
     .img{
         width: 260px;
         height: 278px;
-        align-self: ;
     }
     .vendido{
         flex-direction: column;
