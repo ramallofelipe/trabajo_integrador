@@ -101,7 +101,7 @@ h1{
 .productos article{
     height: 530px;
     width: 18%;
-    border: 0.5px solid ;
+    border:;
     border-radius: 30px;
     margin: 10px;
     padding: 5px;
@@ -271,15 +271,20 @@ select{
 
 .cuerpo{
     width: 1180px;
+    margin-top: 60px;
     display: flex;
-color: lightgrey;
+    color: lightgrey;
+    font-family: "DM sans";
 }
 
 .iphone17img{
-    width: 500px ;
+    width: 450px ;
 }
 .imgIphone{
-      width: 40% ;
+    width: 40% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .partederecha{
     width: 600px;
@@ -297,8 +302,9 @@ width: 100%;
 }
 .tituloIphone{
 color: lightgrey;
-width: 200%;
+width: 600px;
 font-size: 60px;
+margin: 0;
 }
 .precioIphone{
 color: lightgrey;
