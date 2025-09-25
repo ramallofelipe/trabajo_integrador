@@ -100,7 +100,6 @@ h1{
 .productos article{
     height: 530px;
     width: 18%;
-    border: 0.5px solid ;
     border-radius: 30px;
     margin: 10px;
     padding: 5px;
@@ -425,9 +424,38 @@ textarea{
     align-items: center;
     justify-content: space-between;
     height: 30px;
-    width: 330px;  
+    width: 330px;
 }
-
+.productos1{
+    width: 1200px;
+    height: 600px;
+    background-color: rgba(144, 144, 144, 0);
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.productos1 article{
+    height: 600px;
+    width: 18%;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.productos1 h3{
+    margin-top: 20px;
+}
+.productos1 li{
+    color: lightgrey;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 11px;
+}
 
 
 
@@ -465,24 +493,24 @@ textarea{
 
 }
 .titulo{
-align-self:center;
-width: 100%;
+    align-self:center;
+    width: 100%;
 }
 .tituloIphone{
 color: lightgrey;
-width: 200%;
-width: 600px;
-font-size: 60px;
-margin: 0;
+    width: 200%;
+    width: 600px;
+    font-size: 60px;
+    margin: 0;
 }
 .precioIphone{
-color: lightgrey;
-font-size: 50px;
-width: 200px;
+    color: lightgrey;
+    font-size: 50px;
+    width: 200px;
 }
 .pagoIphone{
-color: lightgrey;
-width: 250px;
+    color: lightgrey;
+    width: 250px;
 }
 .g5{
     color: lightgrey;
@@ -632,7 +660,7 @@ width: 250px;
     .primero{
         width: 90vw;
         max-width: 850px;
-        min-width: 650px;    }
+        min-width: 650px;    
         min-width: 650px;
         
     }
@@ -664,7 +692,8 @@ width: 250px;
         visibility: visible;
     }
 }
-@media (max-width: 650px){main{
+@media (max-width: 650px){
+    main{
         width: 550px;
         min-width: 0;
         display: flex;
