@@ -425,7 +425,7 @@ textarea{
     align-items: center;
     justify-content: space-between;
     height: 30px;
-    width: 330px;
+    width: 100%;
 }
 .productos1{
     width: 1200px;
@@ -986,5 +986,8 @@ color: lightgrey;
     .nav{
         display: flex;
         align-items: center;
+    }
+    form h3, p, #com{
+        justify-self: flex-start;
     }
 }
