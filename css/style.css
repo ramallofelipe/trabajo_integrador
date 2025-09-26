@@ -573,19 +573,7 @@ color: lightgrey;
     margin-right: 100px;
     cursor: pointer;
 }
-.boton1{
-    padding: 7px 50px;
-    border: 3px solid lightgrey;
-    border-radius: 40px;
-    width: 420px;
-    font-weight: bold;
-    font-size: 20px;
-    margin-left: 40px;
-    text-align: center;
-    background-color: black;
-    color: lightgrey;
-    cursor: pointer;
-}
+
 .noise{
     width: 100%;
 }
