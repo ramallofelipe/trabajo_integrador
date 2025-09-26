@@ -11,15 +11,14 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     font-family: "DM sans";
+    color: lightgrey;
     margin:0;
 }
 main{
     width: 1140px; 
 }
 .menu{
-    
     border-radius: 30px;
-    border: 0px solid lightgray;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -32,7 +31,6 @@ main{
 }
 .logo{
     width: 35px;
-    color: grey;
     margin-left: 40px;
 }
 .menu1{
@@ -42,10 +40,8 @@ main{
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    width: 69.57%;
-}
-.menu1 .amenu{
-    margin-left: 50px;
+    list-style: none;
+    width: 55%;
 }
 .menu2{
     justify-self: flex-end;
@@ -54,11 +50,11 @@ main{
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
-    width: 30%;
+    width: 25%;
 }
 .input{
     background-color: rgba(144, 144, 144, 0);
-    border: 2px solid rgb(195, 195, 195);
+    border: 2px solid lightgrey;
     border-radius: 30px;
     height: 40px;
     width: 200px;
@@ -67,13 +63,11 @@ main{
     color: lightgrey;
 }
 .amenu{
-    margin-left: 15px;
-    margin-right: 10px;
+    margin-left: 40px;
 }
 .tmenu{
-    color: rgb(195, 195, 195);
+    color: lightgrey;
     text-decoration: none;
-    font-family: "DM sans";
     font-weight: 500;
 }
 .cuerpo{
@@ -83,7 +77,6 @@ main{
     justify-content: space-between;
 }
 h1{
-    color: lightgrey;
     margin-left: 10px;
     margin-bottom: 10px;
     margin-top: 30px;
@@ -120,13 +113,10 @@ ul{
     margin-left: 15px;
 }
 .productos h3{
-    color: lightgrey;
     margin-top: 15px;
-    font-family: "DM sans";
 }
 div{
     width: 200px;
-    color: lightgrey;
     margin-bottom: 10px;
 }
 div p{
@@ -152,7 +142,6 @@ div p{
     flex-wrap: wrap;
     flex-direction: row;
     width: 1180px;
-    margin-top: 0px;
     border-radius: 30px;
 }
 .num{
@@ -621,17 +610,17 @@ color: lightgrey;
         min-width: 650px;
     }
     .amenu{
-        margin-left: 10px;
+        margin-left: 20px;
         margin-right: 5px;
     }
     .logo{
         margin-left: 20px;
     }
     .menu1{
-        width: 75%;
+        width: 65%;
     }
     .menu2{
-        width: 25%;
+        width: 30%;
     }
     .cuerpo{
         display: flex;
@@ -662,7 +651,6 @@ color: lightgrey;
         max-width: 850px;
         min-width: 650px;    
         min-width: 650px;
-        
     }
     h3{
         height: 20px;
@@ -778,7 +766,7 @@ color: lightgrey;
     .menu{
         flex-direction: column;
         height: 330px;
-        width: 100%;
+        width: 90%;
     }
     .menu1{
         height: 250px;
@@ -820,15 +808,13 @@ color: lightgrey;
     .menu2 .tmenu{
         color: black;
     }
-    .tmenu{
-        margin: 0;
-    }
     .logo, #search.input{
         margin: 0;
     }
     #search.input{
         width: 100%;
         max-width: none;
+        height: 35px;
     }
     footer{
         width: 90vw;
@@ -862,7 +848,6 @@ color: lightgrey;
     }
     h1{
         font-size: 38px;
-
     }
     .productos1{
         justify-content: center;
@@ -974,5 +959,9 @@ color: lightgrey;
     .boton1{
         margin: 0;
         width: 340px;
+    }
+    .nav{
+        display: flex;
+        align-items: center;
     }
 }
