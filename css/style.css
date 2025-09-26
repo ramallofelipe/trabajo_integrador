@@ -874,4 +874,53 @@ color: lightgrey;
         font-size: 12px;
 
     }
+     .iphone17img{
+        width: 340px;
+    }
+    .cuerpo{
+        width: 95vw;
+    }
+    .partederecha{
+        width: 95vw;
+    }
+    .encuadradito{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 110px;
+    }
+    .cuadradito{
+        width: 23%;
+    }
+    .cuadradito img{
+        width: 80%;
+    }
+    .a17{
+        width: 90%;
+        font-size: 16px;
+        text-align: center;
+    }
+    .tituloIphone, .precioIphone{
+        font-size: 40px;
+        width: 100%;
+    }
+    .divBotones{
+        width: 90vw;
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .boton0{
+        width: 90%;
+        margin: 0;
+        height: 50px;
+    }
+    .boton1{
+        width: 90%;
+        margin: 0;
+        height: 50px;
+    }
 }
