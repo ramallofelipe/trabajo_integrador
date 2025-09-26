@@ -938,4 +938,41 @@ color: lightgrey;
         width: 100%;
         height: 110px;
     }
+    .register, .login{
+        justify-content: center;
+    }
+    .reg1, .login1{
+        width: 90vw;
+        text-align: center;
+        min-width: 340px;
+    }
+    .input{
+        width: 55.38vw;
+        min-width: 251px;
+    }
+    .register div{
+        text-align: left;
+    }
+    select{
+        width: 30.769vw;
+        min-width: 150px;
+    }
+    .genero{
+        width: 55.38vw;
+        min-width: 340px;
+        
+    }
+    .botonn{
+        min-width: 340px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .cua{
+        margin-left: 15px;
+    }
+    .boton1{
+        margin: 0;
+        width: 340px;
+    }
 }
