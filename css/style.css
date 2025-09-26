@@ -700,6 +700,17 @@ color: lightgrey;
         max-width: 850px;
         min-width: 650px;
     }
+    .cuerpo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .divBotones{
+        margin-top: 30px;
+    }
+    .partederecha{
+        margin-top: 30px;
+    }
 }
 @media (max-width: 650px){
     main{
