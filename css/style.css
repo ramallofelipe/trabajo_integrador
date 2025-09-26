@@ -230,10 +230,16 @@ footer{
     align-items: center;
     justify-content: center;
 }
+.ul_footer{
+    list-style: none;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .menu3{
     color: lightgrey;
     text-decoration: none;
-
 }
 span{
     margin-left: 10px;
