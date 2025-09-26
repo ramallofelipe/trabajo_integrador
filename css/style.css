@@ -169,7 +169,6 @@ div p{
     padding: 10px;
     height: 480px;
 }
-
 .ah2{
     align-self: center;
     height: 208px;
@@ -652,6 +651,7 @@ color: lightgrey;
     }
     .h1{
         height: 40px;
+        align-self: flex-start;
     }
     .productos article, .productos2 article{
         width: 30%;
@@ -713,6 +713,9 @@ color: lightgrey;
     }
     .partederecha{
         margin-top: 30px;
+    }
+    .vendido .productos{
+        height: 1900px;
     }
 }
 @media (max-width: 650px){
@@ -827,6 +830,9 @@ color: lightgrey;
     }
     .logo, #search.input{
         margin: 0;
+    }
+    .menu form{
+        width: 100%;
     }
     #search.input{
         width: 100%;
