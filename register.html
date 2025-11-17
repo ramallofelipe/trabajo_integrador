@@ -42,55 +42,32 @@
     <section class="login1">
         <form class="form" action="./login.html" method="GET">
         <article>
-            <h3 class="h3_register">Nombre</h3>
-            <label for="name"></label>
-            <input class="rectangulo" type="text" name="nombre" id="name" value="" placeholder="Name">
-            <p class="obligatorio">Obligatorio.</p>
-        </article>
-        <article>
             <h3 class="h3_register">Email</h3>
-            <label  for="email"></label>
             <input class="rectangulo"  id="email" type="email" name="email" placeholder="Email" value="">
-            <p class="obligatorio">Obligatorio.</p>
+            <p class="obligatorio email">Obligatorio.</p>
         </article>
         <article>
             <h3 class="h3m">Contraseña</h3>
             <label for="password"></label>
             <input class="rectangulo" id="password" type="password" name="password" placeholder="password" value="">
-            <p class="obligatorio">Obligatorio.</p>
+            <p class="obligatorio password">Obligatorio.</p>
         </article>
         <article>
-            <h3 class="h3_pais">País de nacimiento</h3>
-            <select class="pais" name="pais" id="">
-                <option value="Ar">Argentina</option>
-                <option value="Br">Brasil</option>
-                <option value="Uy">Uruguay</option>
-            </select>
-            <p class="obligatorio">Obligatorio.</p>
+            <h3 class="h3_register">Repetir Contraseña</h3>
+            <input class="rectangulo" type="password" name="repassword" id="name" value="" placeholder="Repetir contraseña">
+            <p class="obligatorio name">Obligatorio.</p>
         </article>
-        <article>
-            <h3 class="h3_pais">Género</h3>
-            <section class="genero">
-                <input type="checkbox" name="Maculino" value="Masc" class="circ"><a>Masculino</a><input type="checkbox" name="Femenino" value="Fem" class="circ"><a>Femenino</a><input type="checkbox" name="no" value="no" class="circ"><a>Prefiero no decirlo</a>
-            </section>
-            
-        </article>
-        <article>
-            <h3 class="h3_pais">Hobbies</h3>
-            <section class="genero"><input type="checkbox" name="Guitarra" class="cua" value="Guitarra"><a>Guitarra</a><input type="checkbox" name="Futbol" class="cua" value="Futbol"><a>Fútbol</a><input type="checkbox" name="Tenis" class="cua" value="Tenis"><a>Tenis</a><input type="checkbox" name="Programacion" class="cua" value="Programacion"><a>Programación</a></section>
-            
-        </article>
-        <article>
-            <h3 class="h3_pais">Dejános tus comentarios</h3>
-            <textarea name="comentarios" id="com"></textarea>
-        </article>
+        
         <article class="acepto">
             <input type="checkbox" value="terminos" class="cua"><a >Acepto los términos y condiciones.</a>
         </article>
         <article class="boton3">
             <section class="botonn"><button class="boton1" type="submit">Registrarme</button><button class="boton1" type="cancelar">Cancelar</button></section>
-            
         </article>
+        <article>
+            <a href="./login.html">Ya tengo cuenta</a>
+        </article>
+        
     </form>
     </section>
 </section>
