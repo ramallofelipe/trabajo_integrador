@@ -297,6 +297,19 @@ select{
 .form{
     width: 500px;
 }
+.articleRegister{
+    height: 120px;
+}
+.acepto{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.acepto a{
+    color: white;
+    text-decoration: none;
+}
 .h3_login, .h3_register{
     margin: 0;
     font-weight: 400;
@@ -314,12 +327,13 @@ select{
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
 .obligatorio{
     margin-top: 5px;
-    font-size: 18px;
+    font-size: 14px;
     color: red;
+    display: none;
 }
+
 .recordame{
     display: flex;
     justify-content: flex-end;
@@ -354,7 +368,7 @@ select{
     cursor: pointer;
 }
 .register{
-    height: 1000px;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -377,32 +391,6 @@ select{
     width: 200px;
     cursor: pointer;
 }
-.genero{
-    height: 30px;
-    width: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 14px;
-}
-.circ{
-   height: 15px;
-   width: 15px;
-   margin: 0;
-   margin-right: 5px;
-   margin-left: 20px;
-   appearance: none;
-   border: 1px solid black;
-   border-radius: 100%;
-   background-color: white;
-   cursor: pointer;
-}
-.pais{
-    border: 2px solid lightgrey;
-    border-radius: 30px;
-    height: 30px;
-    text-indent: 10px;
-}
 .cua{
     width: 20px;
     height: 12px;
@@ -411,12 +399,6 @@ select{
    margin-left: 20px;
    justify-self: flex-start;
    cursor: pointer;
-}
-textarea{
-    height: 40px;
-    width: 150px;
-    margin-bottom: 25px;
-    border-radius: 10px;
 }
 .boton3{
     display: flex;
@@ -953,7 +935,7 @@ color: lightgrey;
     }
     .botonn{
         min-width: 340px;
-        height: 100px;
+        height: 120px;
         display: flex;
         flex-direction: column;
     }
