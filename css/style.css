@@ -604,6 +604,12 @@ color: lightgrey;
     align-items: center;
     justify-content: center
 }
+.reviews{
+     width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
 /* media */
 
 @media (max-width: 1200px){
