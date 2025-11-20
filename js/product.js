@@ -9,7 +9,8 @@ fetch(`https://dummyjson.com/products/${id}`)
 })
 .then(function(data) {
   console.log(data);
-  let productos = document.querySelector(`  <section class="imgIphone">
+  let productos = document.querySelector(` 
+     <section class="imgIphone">
         <img src="${data.produtct.images[0]}" alt="" class="iphone17img">
     </section>
 <section class="partederecha">
@@ -27,11 +28,12 @@ fetch(`https://dummyjson.com/products/${id}`)
             <li>tag</li>
             <li>tag</li>
             <li>tag</li>
-        </ul>`)
+        </ul>
+        `)
 productos.innerHTML = a
 console.log(a)
 
 })
 .catch(function(error) {
-  console.log("Error: " + error);
+  console.log(error);
 })
