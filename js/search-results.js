@@ -12,24 +12,23 @@ fetch(`https://dummyjson.com/products/search?q=${resultado}`)
   console.log(data);
   let titulo = document.querySelector("h1")
   let res = document.querySelector(".productos2")
-  let lista = []
+  let lista = ""
   console.log(data.products.length)
   titulo.innerText = `Resultado de la busqueda: ${resultado}`
     if(data.products.length == 0){
         titulo.innerText = `No se han encontrado resultados`
     } else {
         for (let i=0; i<data.products.length ; i++){
-        lista.push(`<article><img class="img" src="${data.products[i].images[0]}">
+        lista += `<article><img class="img" src="${data.products[i].images[0]}">
                 <h3>${data.products[i].title}</h3>
                 <ul>
                     <li>${data.products[i].description}</li>
                 </ul>
                 <div><p>$${data.products[i].price}</p></div>
-                <a class="ver" href="product.html?id=${data.products[i].id}">Ver Mas</a></article>`)}
+                <a class="ver" href="product.html?id=${data.products[i].id}">Ver Mas</a></article>`}
 }
-let a = lista.join('')
-console.log(a)
-res.innerHTML = a
+console.log(lista)
+res.innerHTML = lista
 })
 
 .catch(function(error) {
