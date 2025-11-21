@@ -21,7 +21,7 @@ formulario.addEventListener('submit', function(event){
         invalid.style.display = 'block'
     } else{
 
-        localStorage.setitem("usuario", email.value)
+        localStorage.setItem("usuario", email.value)
         this.submit()
     }
     
