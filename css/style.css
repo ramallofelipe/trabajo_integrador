@@ -41,7 +41,7 @@ main{
     justify-content: flex-start;
     flex-wrap: wrap;
     list-style: none;
-    width: 55%;
+    width: 60%;
 }
 .menu2{
     justify-self: flex-end;
@@ -51,6 +51,20 @@ main{
     justify-content: flex-end;
     flex-wrap: wrap;
     width: 25%;
+    list-style: none;
+}
+.oculto{
+    display: none;
+    width: 35%;
+    justify-content: space-between;
+}
+.oculto .tmenu{
+    font-size: 14px;
+    align-items: center;
+}
+.oculto .amenu{
+    width: 160px;
+    margin-left: 20px;
 }
 .input{
     background-color: rgba(144, 144, 144, 0);
