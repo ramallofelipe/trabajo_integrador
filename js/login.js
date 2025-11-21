@@ -20,6 +20,8 @@ formulario.addEventListener('submit', function(event){
         invalid.innerText = "La contraseña debe tener al menos 6 caracteres"
         invalid.style.display = 'block'
     } else{
+
+        localStorage.setitem("usuario", email.value)
         this.submit()
     }
     
