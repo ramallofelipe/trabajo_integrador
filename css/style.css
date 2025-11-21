@@ -176,16 +176,11 @@ div p{
 .air{
     width: 660px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 20px;
     padding: 10px;
     height: 480px;
-}
-.ah2{
-    align-self: center;
-    height: 100px;
-    justify-self: center;
 }
 .h2a{
     font-size: 56px;
@@ -202,7 +197,6 @@ div p{
     color: white;
     width: 380px;
     font-size: 12px;
-    align-self: center;
 
 }
 .comprar{
@@ -270,7 +264,6 @@ span{
     color: lightgrey;
 }
 .mil{
-   visibility: hidden;
    color: white;
 }
 select{
@@ -671,9 +664,6 @@ color: lightgrey;
         width: 27vw;
         max-width: 400px;
     }
-    .parrafo_airpods{
-        display: none;
-    }
     .ah2{
         height: 160px;
     }
@@ -686,7 +676,6 @@ color: lightgrey;
     }
     .mil{
         color: white;
-        visibility: visible;
     }
     .productos1 article{
         width: 30%;
@@ -724,6 +713,11 @@ color: lightgrey;
         width: 90vw;
         min-width: 0;
     }
+    .comprar{
+
+    margin-top: 15px;
+
+}
     .productos, .productos2{
         justify-content: center;
         width: 90vw;
