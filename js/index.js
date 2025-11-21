@@ -17,7 +17,6 @@ fetch("https://dummyjson.com/products/category/smartphones")
 }
   let productos = document.querySelector('.productos')
   let popular = document.querySelector('.vendido')
-  let productos1 = popular.querySelector('.productos')
   let lista = []
   for (let i=0; i<10 ; i++){
       lista.push(`<article>
