@@ -17,9 +17,8 @@ fetch("https://dummyjson.com/products/category/smartphones")
 }
   let productos = document.querySelector('.productos')
   let popular = document.querySelector('.vendido')
-  let productos1 = popular.querySelector('.productos')
   let lista = []
-  for (let i=5; i<15 ; i++){
+  for (let i=0; i<10 ; i++){
       lista.push(`<article>
                      <img class="img" src="${data.products[i].images[0]}" alt="">
                          <h3>${data.products[i].title}</h3>
@@ -30,7 +29,6 @@ fetch("https://dummyjson.com/products/category/smartphones")
                   <div><p>$${data.products[i].price}</p></div>
                   <a class="ver" href="product.html?id=${data.products[i].id}">Ver Mas</a>
                 </article>`)
-  
 }
 let a = lista.join('')
 productos.innerHTML = a
@@ -51,7 +49,7 @@ let primero = `<h1>PRODUCTO MAS POPULAR:</h1>
   let lista1 = []
   lista1.push(primero)
   for (let i=0; i<data.products.length ; i++){
-    if (data.products[i].rating > 4 && lista1.length < 11 ){
+    if (data.products[i].rating > 3.5 && lista1.length < 11 ){
         lista1.push(`<article>
                      <img class="img" src="${data.products[i].images[0]}" alt="">
                          <h3>${data.products[i].title}</h3>
