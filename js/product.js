@@ -9,29 +9,40 @@ fetch(`https://dummyjson.com/products/${id}`)
 })
 .then(function(data) {
   console.log(data);
-  let productos = document.querySelector(` 
+  let productos1 = document.querySelector('.imgIphone')
+productos1.innerHTML = `
      <section class="imgIphone">
-        <img src="${data.produtct.images[0]}" alt="" class="iphone17img">
-    </section>
-<section class="partederecha">
+        <img src="${data.product.images[0]}" alt="" class="iphone17img">
+    </section>`
+  let productos2 = document.querySelector('.partederecha')
+    productos2.innerHTML =`<section class="partederecha">
         <section class="titulo"> 
             <h1 class="tituloIphone"> ${data.product.title} </h1> 
             <h2 class="precioIphone"> ${data.product.price}</h2> <a class="pagoIphone">From $1599 or $133.25/mo For 12 Months</a>
-        </section>
-     <section class="innovaciones">
+        </section>`
+  let productos3 = document.querySelector('.innovaciones')
+  productos3.innerHTML =
+     `<section class="innovaciones">
         <p>${data.product.description}</p>  
         <p>${data.product.brand}</p>  
         <p>${data.product.category}</p>
         <p>${data.product.stock}</p>
         <ul>
-            <p>${data.product.tags}</p>
-            <li>tag</li>
-            <li>tag</li>
-            <li>tag</li>
+            <p>lista de tags</p>
+            <li>${data.product.tags[0]}</li>
+            <li>${data.product.tags[1]}</li>
+            <li>${data.product.tags[2]}</li>
         </ul>
-        `)
-productos.innerHTML = a
-console.log(a)
+        </section> `
+
+  let reviews = document.querySelector('.reviews')
+reviews.innerHTML = `<section class="reviews">
+        <h3>Reviews</h3>
+        <p>Rating: ${data.product.reviews[0].rating}</p>
+        <p>Texto del comentario: ${data.product.reviews[0].comment}</p>
+        <p>Fecha: ${data.product.reviews[0].date}</p>
+        <p>Nombre del usuario: ${data.product.reviews[0].reviewerName}</p>
+    </section>`
 
 })
 .catch(function(error) {
