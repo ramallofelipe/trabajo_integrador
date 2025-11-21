@@ -559,6 +559,10 @@ color: lightgrey;
     margin-right: 100px;
     cursor: pointer;
 }
+.boton a{
+    text-decoration: none;
+    color: white;
+}
 
 .noise{
     width: 100%;
