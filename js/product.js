@@ -10,10 +10,16 @@ fetch(`https://dummyjson.com/products/${id}`)
 .then(function(data) {
   console.log(data);
   let productos1 = document.querySelector('.imgIphone')
-productos1.innerHTML = `
+  let produ1 = ''
+  for (let i=0; i<data.product.length; i++) {
+      produ1 += `
      <section class="imgIphone">
         <img src="${data.product.images[0]}" alt="" class="iphone17img">
-    </section>`
+    </section>`}
+    productos1.innerHTML = produ1
+    console.log(produ1)
+    console.log(data.product.length)
+
   let productos2 = document.querySelector('.partederecha')
     productos2.innerHTML =`<section class="partederecha">
         <section class="titulo"> 
