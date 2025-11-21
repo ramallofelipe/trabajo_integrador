@@ -17,9 +17,9 @@ fetch("https://dummyjson.com/products/category/smartphones")
 }
   let productos = document.querySelector('.productos')
   let popular = document.querySelector('.vendido')
-  let lista = []
-  for (let i=0; i<10 ; i++){
-      lista.push(`<article>
+  let categorias = ""
+        for (let i=0; i<10; i++) {
+        categorias += `<article>
                      <img class="img" src="${data.products[i].images[0]}" alt="">
                          <h3>${data.products[i].title}</h3>
                             <ul>
@@ -28,11 +28,10 @@ fetch("https://dummyjson.com/products/category/smartphones")
                              </ul>
                   <div><p>$${data.products[i].price}</p></div>
                   <a class="ver" href="product.html?id=${data.products[i].id}">Ver Mas</a>
-                </article>`)
-}
-let a = lista.join('')
-productos.innerHTML = a
-  console.log(a)
+                </article>`
+        }
+        productos.innerHTML = categorias
+  
   
       
 console.log(hola())
@@ -46,11 +45,12 @@ let primero = `<h1>PRODUCTO MAS POPULAR:</h1>
                     <a class="comprar"  href="product.html?id=${hola().id}">Comprar</a></article></article>
                 </article> <section class="productos">`
    
-  let lista1 = []
-  lista1.push(primero)
+  let lista1 = ""
+  lista1 += primero
+
   for (let i=0; i<data.products.length ; i++){
-    if (data.products[i].rating > 3.5 && lista1.length < 11 ){
-        lista1.push(`<article>
+    if (data.products[i].rating > 3.5 ){
+        lista1 += `<article>
                      <img class="img" src="${data.products[i].images[0]}" alt="">
                          <h3>${data.products[i].title}</h3>
                             <ul>
@@ -59,11 +59,11 @@ let primero = `<h1>PRODUCTO MAS POPULAR:</h1>
                              </ul>
                   <div><p>$${data.products[i].price}</p></div>
                   <a class="ver" href="product.html?id=${data.products[i].id}">Ver Mas</a>
-                </article>`)}
+                </article>`}
 }
-lista1.push('</section>')
-let b = lista1.join('')
-popular.innerHTML = b
+lista1 += '</section>'
+console.log(lista1)
+popular.innerHTML = lista1
 console.log(b)
 })
 .catch(function(error) {
