@@ -62,7 +62,7 @@ let primero = `<h1>PRODUCTO MAS POPULAR:</h1>
   let lista1 = ""
   lista1 += primero
 
-  for (let i=0; i<data.products.length ; i++){
+  for (let i=1; i<data.products.length ; i++){
     if (data.products[i].rating > 3.5){
         lista1 += `<article>
                      <img class="img" src="${data.products[i].images[0]}" alt="">

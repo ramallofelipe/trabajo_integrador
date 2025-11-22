@@ -971,4 +971,7 @@ color: lightgrey;
     form h3, p, #com{
         justify-self: flex-start;
     }
+    .oculto{
+        display: none;
+    }
 }
