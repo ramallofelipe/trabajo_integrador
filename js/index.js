@@ -6,17 +6,10 @@ fetch("https://dummyjson.com/products/category/smartphones")
 })
 .then(function(data) {
   console.log(data);
-  function hola() {
-    let popular = data.products[0]
-    for (let i=1;i<data.products.length;i++){
-        if (data.products[i].rating > popular.rating){
-            popular = data.products[i]
-        }
-    }
-    return popular
-}
+  
+    
   let productos = document.querySelector('.productos')
-  let popular = document.querySelector('.vendido')
+  
   let categorias = ""
         for (let i=0; i<10; i++) {
         categorias += `<article>
@@ -32,8 +25,29 @@ fetch("https://dummyjson.com/products/category/smartphones")
         }
         productos.innerHTML = categorias
   
-  
-      
+
+})
+.catch(function(error) {
+  console.log("Error: " + error);
+})
+
+
+fetch("https://dummyjson.com/products/category/mobile-accessories")
+.then(function(response) {
+  return response.json()
+})
+.then(function(data) {
+  console.log(data);
+  let popular = document.querySelector('.vendido')
+  function hola() {
+    let popular = data.products[0]
+    for (let i=1;i<data.products.length;i++){
+        if (data.products[i].rating > popular.rating){
+            popular = data.products[i]
+        }
+    }
+    return popular
+}
 console.log(hola())
 let primero = `<h1>PRODUCTO MAS POPULAR:</h1>
                     <article class="primero">
@@ -49,7 +63,7 @@ let primero = `<h1>PRODUCTO MAS POPULAR:</h1>
   lista1 += primero
 
   for (let i=0; i<data.products.length ; i++){
-    if (data.products[i].rating > 3.5 ){
+    if (data.products[i].rating > 3.5){
         lista1 += `<article>
                      <img class="img" src="${data.products[i].images[0]}" alt="">
                          <h3>${data.products[i].title}</h3>
