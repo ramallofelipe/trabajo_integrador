@@ -9,5 +9,5 @@ if (recuperoStorage) {
      oculto.style.flexDirection = "row"
      
      oculto.innerHTML = `<li class="amenu"><a class="tmenu" >Bienvenido ${recuperoStorage}</a></li>
-                <li class="amenu"><a class="tmenu" href="">Log out</a></li>`
+                <li class="amenu"><a class="tmenu" id="logout" href="">Log out</a></li>`
 }
